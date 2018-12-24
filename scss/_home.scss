@@ -1,0 +1,71 @@
+
+//main-content
+.main-content{
+
+	width: 100%;
+	min-height: 100vh;
+	background: url('../images/banner-dois.jpg') no-repeat 50% 50%;
+	background-size: cover;
+	overflow: hidden;
+
+	.container{
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+	}
+
+	.main-footer{
+		margin: auto auto 40px auto;
+	}
+}
+
+
+// Call To Action
+
+.callHome{
+	
+	margin-top: 20vh;
+	flex: 1 0 auto;
+
+	h1{
+	font-size: 2.5rem;
+	color: $white;
+	}
+}
+
+.main-btn{
+	background: $white;
+	color: $black;
+	padding: 10px 30px;
+	margin-top: 3.125rem;
+	display: inline-block;
+	max-width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+	.callHome{
+		h1{
+			font-size: 2rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.callHome{
+		h1{
+			font-size: 1.5rem;
+			text-align: center;
+		}
+	}
+
+	.main-btn{
+		margin-top: 2rem;
+	}
+
+	.callHome{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+

@@ -1,0 +1,191 @@
+.main-header-dois{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0 100px 0;
+
+	.main-logo{	
+		height: auto;
+		opacity: .7;
+		transition: .3s ease;
+
+		&:hover{
+			opacity: 1;
+		}
+
+		svg#main-logo{
+			width: 70px;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.menu a{
+		margin-left: 30px;
+		color: $black!important;
+		opacity: .7;
+		transition: .3s ease;
+
+		&:hover{
+			opacity: 1;
+		}
+	}
+}
+
+// main-header
+
+.main-header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0 100px 0;
+
+	li{
+		display: inline-block;
+	}
+
+	.main-logo{	
+		height: auto;
+		opacity: .7;
+		transition: .3s ease;
+
+		&:hover{
+			opacity: 1;
+		}
+
+		svg#main-logo{
+			width: 70px;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.menu a{
+		margin-left: 30px;
+		color: $white;
+		opacity: .7;
+		transition: .3s ease;
+
+		&:hover{
+			opacity: 1;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+		.nav-toggle{
+		display: block;
+		width: 30px;
+		height: 30px;
+		color: $white;
+		border-top: 3px solid;
+		position: relative;
+		cursor: pointer;
+		-webkit-backface-visibility: hidden;
+	}
+
+	.nav-toggle.interno{
+		color: $black;
+	}
+
+	.nav-toggle::after, .nav-toggle::before{
+		content: '';
+		display: block;
+		height: 3px;
+		background: currentColor;
+		position: relative;
+		transition: transform .2s ease;
+		margin-top: 6px;
+	}
+
+	.nav-toggle.active{
+		border-top-color: transparent;
+	}
+
+	.nav-toggle.active::after{
+		margin-top: 0px;
+		top: 3px;
+		transform: rotate(45deg);
+	}
+
+	.nav-toggle.active::before{
+		margin-top: 0px;
+		top: 6px;
+		transform: rotate(135deg);
+	}
+
+
+
+	.menu.mobile-menu{
+		background: $white;
+		position: fixed;
+		right: 0px;
+		opacity: 0;
+		visibility: hidden;
+		transform: translate3d(60px, 0px, 0px);
+		transition: .3s;
+
+		li{
+			display: block;
+		}
+
+		a{
+			display: block;
+			margin-left: 0;
+			color: $black;
+			padding: 15px 30px;
+			border-bottom: 1px solid $black;
+
+			&:hover{
+				background: $black;
+				color: $white;
+			}
+		}
+	}
+
+	.menu.mobile-menu.interno{
+		background: $black;
+
+		a{
+			color: $white!important;
+			border-bottom: 1px solid $white;
+
+			&:hover{
+				background: $white;
+				color: $black!important;
+			}
+		}
+	}
+
+	.menu.mobile-menu.active{
+		opacity: 1;
+		visibility: visible;
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

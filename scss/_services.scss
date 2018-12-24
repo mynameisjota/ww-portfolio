@@ -1,0 +1,71 @@
+.servicos{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+
+	.item{
+		flex: 1 1 450px;
+		padding: 40px;
+		box-sizing: border-box;
+		min-height: 300px;
+		color: $black;
+
+		&:nth-of-type(2n+1){
+			background: #C7C7C7;
+		}
+
+		&:nth-of-type(2n+2){
+			background: #EDEDED;
+		}
+	}
+
+}
+
+.call-to-action{
+
+	h1{
+		font-size: 1.875rem;
+		color: $black;
+		margin-bottom: 30px;
+	}
+	
+	a{
+		background: $black;
+		color: $white;
+		padding: 10px 20px;
+		margin-bottom: 100px;
+		display: table;
+	}
+}
+
+// Depoimentos
+
+.depoimentos{
+	.item{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		.left{
+			flex: 1;
+			margin-right: 30px
+		}
+
+		.right{
+			flex: 5;
+
+			a{
+				color: #777;
+				margin: 15px 0;
+				display: table;
+				font-weight: bold;
+			}
+
+			p{
+				font-size: 18px;
+				color: $black;
+			}
+		}
+	}
+}
