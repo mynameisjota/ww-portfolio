@@ -6,52 +6,23 @@
 	</h1>
 
 	<section class="servicos">
-		<div class="item">
-			<h3>Entendendo o Projeto</h3>
-			<p>
-				Esse processo consiste em decidir se o seu plano de projeto está de acordo com os objetivos do seu negocio. Esse processo é mais trabalhoso, afim de otimizar o nosso tempo e focar no interessante. Resultados!
-			</p>
+
+		<div class="left">
 			<ul>
-				<li>Conhecer o Produto</li>
-				<li>Problema e Solução</li>
-				<li>Apresentação da Solução</li>
+				<li><a href="#">Services 01</a></li>
+				<li><a href="#">Services 02</a></li>
+				<li><a href="#">Services 03</a></li>
+				<li><a href="#">Services 04</a></li>
+				<li><a href="#">Services 05</a></li>
 			</ul>
 		</div>
 
-		<div class="item">
-			<h3>UI/UX</h3>
-			<p>
-				Repensar o layout da sua aplicação pode ser o primeiro passo para o crescimento, O seu projeto pode crescer muito com a ajuda do design correto. 
-			</p>
+		<div class="right">
+			<h1>Titulo do Servico</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quisquam explicabo eius labore eum ad quibusdam quis, aspernatur facilis deserunt dolores impedit, cum doloremque maxime iusto esse, laborum non. Magni!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, odit, assumenda. Sed corporis error aliquam illo delectus aspernatur inventore ducimus id reiciendis itaque facere cupiditate eum, iste vel porro aliquid, reprehenderit vitae? Expedita repellendus pariatur eaque minima quidem quod, tempora dolores? Cum tenetur corrupti vero id officia voluptas hic adipisci. Praesentium magni veniam doloremque odit laudantium iste rerum mollitia error quisquam quod excepturi illo maiores unde et, voluptas obcaecati saepe molestiae, totam laboriosam repudiandae earum sit libero laborum quia. Ab cupiditate illo sapiente quos ipsum numquam perspiciatis, totam eligendi?</p>
 		</div>
 
-		<div class="item">
-			<h3>Desenvolvimento</h3>
-			<p>
-				Nós desenvolvemos sites e blogs em Wordpress, que facilita sua vida na hora de alterar o conteúdo ou fazer uma nova publicação. Rapidez aliada a um design único com foco em atender aos seus objetivos.
-			</p>
-		</div>
-
-		<div class="item">
-			<h3>Identidade de Marca</h3>
-			<p>
-				Identidade de marca é tudo que definem a missão e valores da sua empresa. Os logotipos da sua empresa, designs de produtos e ética do negócio são todos parte da sua marca. 
-			</p>
-		</div>
-
-		<div class="item">
-			<h3>Suporte</h3>
-			<p>
-				Estamos sempre disponíveis para a solução de eventuais problemas que a sua aplicação possa vir a ter, ou adição de novas funcionalidades, deixe isso com a gente. 
-			</p>
-		</div>
-
-		<div class="item">
-			<h3>Papelaria</h3>
-			<p>
-				Criação de arquivos para papelaria, como cartão de visitas, papel timbrado, Folhetos e Panfletos. Catalogo e Foldes, dentre outros.
-			</p>
-		</div>
 	</section> <!-- Servicos -->
 
 	<div class="call-to-action">
