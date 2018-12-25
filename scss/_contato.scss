@@ -1,0 +1,96 @@
+.contato{
+	display: flex;
+	flex-wrap: wrap;
+
+	/*Orçamento*/
+	form, input, textarea{
+		border: 0;
+	}
+
+	.contato {
+		padding: 40px 0;
+	}
+
+	.contato_form label{
+		display: block;
+		line-height: 25px;
+		margin-bottom: 4px;
+	}
+
+	.contato_form input {
+		display: block;
+		width: 100%;
+		border-bottom: 4px solid $black;
+		background: none;
+		padding: 7px 10px;
+		margin-bottom: 10px;
+		outline: none;
+		font-size: 14px;
+	}
+
+	.contato_form textarea {
+		display: block;
+		width: 100%;
+		height: 120px;
+		border-bottom: 4px solid $black;
+		background: none;
+		padding: 7px 10px;
+		margin-bottom: 20px;
+		outline: none;
+		font-size: 14px;
+	}
+
+	.contato_form button {
+		background: $black;
+		color: $white;
+		padding: 10px 30px;
+		margin-right: 15px;
+		display: inline-block;
+		max-width: 100%;
+		border:none;
+	}
+
+
+	.left{
+		flex: 1 1 500px; 
+
+		h3{
+			font-size: 1.25rem;
+			color: $black;
+			margin-bottom: 2rem;
+		} 
+
+		h3.sociais-contato{
+			margin: 2rem 0;
+		}
+
+		span{
+			display: block;
+			padding-bottom: 15px;
+		}
+
+		span, p{
+			color: #808080;
+		}
+	}
+
+	.right{
+		flex: 1 1 500px;
+	}
+}
+
+.submmit{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	a{
+		color: $black;
+		font-weight: bold;
+	}
+}
+
+
+

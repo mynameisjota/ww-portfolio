@@ -68,3 +68,10 @@ a.page-numbers{
 	font-weight: 600;
 }
 
+// Texto selecionado
+
+::selection {
+    background: $black;
+    color: $white;
+}
+
