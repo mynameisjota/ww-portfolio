@@ -6,21 +6,79 @@
 	</h1>
 
 	<section class="servicos">
+		
+		<div class="item">
+				<header>
+					<h2>Design UI/UX</h2>
+					<p>Deixe-nos cuidar de como a sua marca 
+					Se apresenta ao publico. </p>
+				</header>
+			<div class="left">
+				<ul>
+					<li>Web Site Layout</li>
+					<li>Papelaria</li>
+					<li>Identidade de Marca</li>
+					<li>design para Redes Socias</li>
 
-		<div class="left">
-			<ul>
-				<li><a href="#">Services 01</a></li>
-				<li><a href="#">Services 02</a></li>
-				<li><a href="#">Services 03</a></li>
-				<li><a href="#">Services 04</a></li>
-				<li><a href="#">Services 05</a></li>
-			</ul>
+				</ul>
+
+				<p>
+					Criação de layouts intuitivos e modernos para atender as necessidades do seu projeto, da melhor forma possível, também cuidamos de como a sua marca vai se apresentar, criando a identidade visual e suas aplicações possíveis.
+				</p>
+			</div> <!-- LEFT -->
+
+			<div class="right">
+				<img src = '<?php bloginfo('template_directory'); ?>/images/des2.svg' alt = 'Design UX/UI' />
+			</div>
 		</div>
 
-		<div class="right">
-			<h1>Titulo do Servico</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quisquam explicabo eius labore eum ad quibusdam quis, aspernatur facilis deserunt dolores impedit, cum doloremque maxime iusto esse, laborum non. Magni!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, odit, assumenda. Sed corporis error aliquam illo delectus aspernatur inventore ducimus id reiciendis itaque facere cupiditate eum, iste vel porro aliquid, reprehenderit vitae? Expedita repellendus pariatur eaque minima quidem quod, tempora dolores? Cum tenetur corrupti vero id officia voluptas hic adipisci. Praesentium magni veniam doloremque odit laudantium iste rerum mollitia error quisquam quod excepturi illo maiores unde et, voluptas obcaecati saepe molestiae, totam laboriosam repudiandae earum sit libero laborum quia. Ab cupiditate illo sapiente quos ipsum numquam perspiciatis, totam eligendi?</p>
+		<div class="item">
+				<header>
+					<h2>Desenvolvimento Web</h2>
+					<p>Vamos posicionar o seu projeto na web
+						Da melhor forma possível</p>
+				</header>
+			<div class="left">
+				<ul>
+					<li>Web Site</li>
+					<li>Loja Virtual</li>
+					<li>Sites Responsivos</li>
+					<li>Blogs</li>
+					<li>Gerenciador de Conteúdo</li>
+				</ul>
+
+				<p>
+					Tudo o que o seu projeto precisa para se adaptar da melhor forma a esse mundo que está cada vez mais virtual, vamos fazer a sua marca visível na web, desenvolvendo sites responsivos, velozes e com design único.
+				</p>
+			</div> <!-- LEFT -->
+
+			<div class="right">
+				<img src = '<?php bloginfo('template_directory'); ?>/images/dev.svg' alt = 'Design UX/UI' />
+			</div>
+		</div>
+
+		<div class="item">
+				<header>
+					<h2>Suporte</h2>
+					<p>Oferecemos suporte após a entrega dos serviços
+Qualquer problema é só entrar em contato.</p>
+				</header>
+			<div class="left">
+				<ul>
+					<li>Funcionalidades</li>
+					<li>Implementações</li>
+					<li>Migração</li>
+					<li>Correão de Bugs</li>
+				</ul>
+
+				<p>
+					Qualquer problema ou necessidade que o seu projeto apresentar, seja ele a implementação de um novo recurso ou a correção de algum problema, nós estaremos a disposição. 
+				</p>
+			</div> <!-- LEFT -->
+
+			<div class="right">
+				<img src = '<?php bloginfo('template_directory'); ?>/images/sup.svg' alt = 'Design UX/UI' />
+			</div>
 		</div>
 
 	</section> <!-- Servicos -->
@@ -37,7 +95,7 @@
 		Clientes dizem
 	</h1>
 
-	<section class="depoimentos">
+	<section class="depoimentos slide">
 		<div class="item">
 
 			<div class="left">
@@ -47,6 +105,40 @@
 			<div class="right">
 				<h3>Aline Almeida</h3>
 				<a href="#">WWW.JUNIORSILVEIRA.COM.BR</a>
+
+				<p>
+					Excelentes profissionais, pontuais para entrega dos trabalhos pedidos e sempre atentos às tendências do mercado digital para aconselhar o cliente da melhor forma, assim os sites que foram produzidos para minha empresa tomaram forma e estão no ar com a identidade de nossos produtos e serviços. Participaram de reuniões presenciais e online para a elaboração dos projetos e melhor entendimento sobre a marca, conseguiram assim capturar a essência do que gostaríamos que nossos clientes vissem em nossas páginas na internet.
+				</p>
+			</div>
+
+		</div>
+
+		<div class="item">
+
+			<div class="left">
+				<img src="https://picsum.photos/199/300" alt="aline">
+			</div>
+
+			<div class="right">
+				<h3>Romon Gorge</h3>
+				<a href="#">WWW.BACONSIDE.COM.BR</a>
+
+				<p>
+					Excelentes profissionais, pontuais para entrega dos trabalhos pedidos e sempre atentos às tendências do mercado digital para aconselhar o cliente da melhor forma, assim os sites que foram produzidos para minha empresa tomaram forma e estão no ar com a identidade de nossos produtos e serviços. Participaram de reuniões presenciais e online para a elaboração dos projetos e melhor entendimento sobre a marca, conseguiram assim capturar a essência do que gostaríamos que nossos clientes vissem em nossas páginas na internet.
+				</p>
+			</div>
+
+		</div>
+
+		<div class="item">
+
+			<div class="left">
+				<img src="https://picsum.photos/199/300" alt="aline">
+			</div>
+
+			<div class="right">
+				<h3>Guilherme Souza</h3>
+				<a href="#">WWW.LUZRETRO.COM.BR</a>
 
 				<p>
 					Excelentes profissionais, pontuais para entrega dos trabalhos pedidos e sempre atentos às tendências do mercado digital para aconselhar o cliente da melhor forma, assim os sites que foram produzidos para minha empresa tomaram forma e estão no ar com a identidade de nossos produtos e serviços. Participaram de reuniões presenciais e online para a elaboração dos projetos e melhor entendimento sobre a marca, conseguiram assim capturar a essência do que gostaríamos que nossos clientes vissem em nossas páginas na internet.

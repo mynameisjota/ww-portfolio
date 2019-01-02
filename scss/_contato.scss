@@ -31,6 +31,7 @@
 	.contato_form textarea {
 		display: block;
 		width: 100%;
+		resize: none;
 		height: 120px;
 		border-bottom: 4px solid $black;
 		background: none;
@@ -86,9 +87,15 @@
 	justify-content: center;
 	text-align: center;
 
+	.btn-preto{
+		cursor: pointer;
+	}
+
+
 	a{
 		color: $black;
 		font-weight: bold;
+		cursor: pointer;
 	}
 }
 

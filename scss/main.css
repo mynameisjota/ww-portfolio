@@ -365,30 +365,40 @@ h1.title-blog {
   .single-post .sidebar-single {
     display: none; } }
 .servicos {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 50px; }
-  .servicos .left {
-    flex: 1;
-    margin-right: 30px; }
-    .servicos .left a {
-      display: inline-block;
-      background: #383838;
-      color: #ffffff;
-      width: 200px;
-      padding: 20px 0;
-      text-align: center;
-      border-bottom: 1px solid #ffffff;
-      transition: all .3s ease; }
-      .servicos .left a:hover {
-        background: #E3E3E3;
+  .servicos .item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px; }
+    .servicos .item header {
+      width: 100%;
+      display: block; }
+      .servicos .item header h2 {
+        font-size: 32px;
         color: #383838; }
-  .servicos .right {
-    flex: 10 1 600px;
-    background: #E3E3E3;
-    padding: 30px;
-    max-height: 240px;
-    overflow-y: auto; }
+      .servicos .item header p {
+        font-size: 18px;
+        color: #777777; }
+    .servicos .item .left {
+      flex: 4 1 500px;
+      display: flex;
+      flex-wrap: wrap;
+      color: #383838; }
+      .servicos .item .left ul {
+        flex: 1 1 200px;
+        margin: 0 30px 30px 20px; }
+        .servicos .item .left ul li {
+          list-style-type: square;
+          margin-bottom: 10px;
+          font-size: 20px; }
+      .servicos .item .left p {
+        flex: 3 1 570px;
+        font-size: 20px;
+        margin: 0; }
+    .servicos .item .right {
+      flex: 2;
+      margin-left: 30px; }
 
 .call-to-action h1 {
   font-size: 1.875rem;
@@ -412,6 +422,8 @@ h1.title-blog {
   .depoimentos .item .left {
     flex: 1;
     margin-right: 30px; }
+    .depoimentos .item .left img {
+      margin-bottom: 20px; }
   .depoimentos .item .right {
     flex: 5; }
     .depoimentos .item .right a {
@@ -423,6 +435,27 @@ h1.title-blog {
       font-size: 18px;
       color: #383838; }
 
+.slide {
+  position: relative;
+  overflow: hidden; }
+
+.slide > * {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: .3s; }
+
+.slide > .active {
+  position: relative;
+  opacity: 1; }
+
+@media only screen and (max-width: 900px) {
+  .servicos {
+    margin-bottom: 50px; }
+    .servicos .item .right {
+      flex: 2;
+      margin: 30px 0 0 0;
+      text-align: center; } }
 .contato {
   display: flex;
   flex-wrap: wrap;
@@ -447,6 +480,7 @@ h1.title-blog {
   .contato .contato_form textarea {
     display: block;
     width: 100%;
+    resize: none;
     height: 120px;
     border-bottom: 4px solid #383838;
     background: none;
@@ -484,8 +518,11 @@ h1.title-blog {
   align-items: center;
   justify-content: center;
   text-align: center; }
+  .submmit .btn-preto {
+    cursor: pointer; }
   .submmit a {
     color: #383838;
-    font-weight: bold; }
+    font-weight: bold;
+    cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
