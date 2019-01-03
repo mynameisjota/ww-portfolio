@@ -12,7 +12,11 @@
 				<span>11 953524954</span>
 				<span>hello@wwcomunicacao.com.br</span>
 				<h3 class="sociais-contato">Redes Sociais</h3>
-				<p>Redes Sociais Icones</p>
+				<ul>
+					<li><img src = '<?php bloginfo('template_directory'); ?>/images/icones/facebook.svg' alt = 'Design UX/UI' /></li>
+					<li><img src = '<?php bloginfo('template_directory'); ?>/images/icones/instagram.svg' alt = 'Design UX/UI' /></li>
+					<li><img src = '<?php bloginfo('template_directory'); ?>/images/icones/behance.svg' alt = 'Design UX/UI' /></li>
+				</ul>
 		</div>
 
 		<div class="right">
