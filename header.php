@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <title><?php bloginfo('name'); ?>	</title>
+    <title><?php bloginfo('name'); ?></title>
+
+    <style>
+		.main-content {
+		  width: 100%;
+		  min-height: 100vh;
+		  background: url(<?php echo get_theme_mod('banner_image'); ?>) no-repeat 50% 50%;
+		  background-size: cover;
+		  overflow: hidden; }
+    </style>
 </head>
 <?php wp_head(); ?>
 <body>

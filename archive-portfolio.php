@@ -17,7 +17,13 @@
 		        <article class="main-project">
 		            <div class="left">
 		                <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-		                <span>Desenvolvimento Web</span>
+		                <span>
+		                	<?php
+								foreach((get_the_category()) as $category) { 
+								    echo $category->cat_name . ' '; 
+								} 
+							?>
+		                </span>
 		            </div>
 
 		            <div class="right">

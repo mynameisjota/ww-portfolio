@@ -9,21 +9,14 @@
 		
 		<div class="item">
 				<header>
-					<h2>Design UI/UX</h2>
-					<p>Deixe-nos cuidar de como a sua marca 
-					Se apresenta ao publico. </p>
+					<h2><?php echo the_field('servico_01'); ?></h2>
+					<p><?php echo the_field('servico_01_descricao'); ?></p>
 				</header>
 			<div class="left">
-				<ul>
-					<li>Web Site Layout</li>
-					<li>Papelaria</li>
-					<li>Identidade de Marca</li>
-					<li>design para Redes Socias</li>
-
-				</ul>
+				<?php echo the_field('servico_01_lista'); ?>
 
 				<p>
-					Criação de layouts intuitivos e modernos para atender as necessidades do seu projeto, da melhor forma possível, também cuidamos de como a sua marca vai se apresentar, criando a identidade visual e suas aplicações possíveis.
+					<?php echo the_field('conteudo_do_servico_01'); ?>
 				</p>
 			</div> <!-- LEFT -->
 
@@ -34,21 +27,14 @@
 
 		<div class="item">
 				<header>
-					<h2>Desenvolvimento Web</h2>
-					<p>Vamos posicionar o seu projeto na web
-						Da melhor forma possível</p>
+					<h2><?php echo the_field('servico_02'); ?></h2>
+					<p><?php echo the_field('servico_02_descricao'); ?></p>
 				</header>
 			<div class="left">
-				<ul>
-					<li>Web Site</li>
-					<li>Loja Virtual</li>
-					<li>Sites Responsivos</li>
-					<li>Blogs</li>
-					<li>Gerenciador de Conteúdo</li>
-				</ul>
+				<?php echo the_field('servico_02_lista'); ?>
 
 				<p>
-					Tudo o que o seu projeto precisa para se adaptar da melhor forma a esse mundo que está cada vez mais virtual, vamos fazer a sua marca visível na web, desenvolvendo sites responsivos, velozes e com design único.
+					<?php echo the_field('conteudo_do_servico_02'); ?>
 				</p>
 			</div> <!-- LEFT -->
 
@@ -59,20 +45,14 @@
 
 		<div class="item">
 				<header>
-					<h2>Suporte</h2>
-					<p>Oferecemos suporte após a entrega dos serviços
-Qualquer problema é só entrar em contato.</p>
+					<h2><?php echo the_field('servico_03'); ?></h2>
+					<p><?php echo the_field('servico_03_descricao'); ?></p>
 				</header>
 			<div class="left">
-				<ul>
-					<li>Funcionalidades</li>
-					<li>Implementações</li>
-					<li>Migração</li>
-					<li>Correão de Bugs</li>
-				</ul>
+				<?php echo the_field('servico_03_lista'); ?>
 
 				<p>
-					Qualquer problema ou necessidade que o seu projeto apresentar, seja ele a implementação de um novo recurso ou a correção de algum problema, nós estaremos a disposição. 
+					<?php echo the_field('conteudo_do_servico_03'); ?>
 				</p>
 			</div> <!-- LEFT -->
 
@@ -85,8 +65,7 @@ Qualquer problema é só entrar em contato.</p>
 
 	<div class="call-to-action">
 		<h1>Parece bom, mas eu tenho algumas perguntas</h1>
-
-		<a href="/contato" class="contato">
+		<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Contato' ) ) ); ?>" class="contato">
 			Contato
 		</a>
 	</div>
@@ -99,15 +78,19 @@ Qualquer problema é só entrar em contato.</p>
 		<div class="item">
 
 			<div class="left">
-				<img src="https://picsum.photos/199/300" alt="aline">
+				<?php if( get_field('foto_depoimento_01') ): ?>
+
+					<img src="<?php the_field('foto_depoimento_01'); ?>" />
+
+				<?php endif; ?>
 			</div>
 
 			<div class="right">
-				<h3>Aline Almeida</h3>
-				<a href="#">WWW.JUNIORSILVEIRA.COM.BR</a>
+				<h3><?php echo  the_field('titulo_depoimento_01'); ?></h3>
+				<a href="<?php the_field('link_depoimento_01'); ?>" target="_blank"><?php echo the_field('site_depoimento_01'); ?></a>
 
 				<p>
-					Excelentes profissionais, pontuais para entrega dos trabalhos pedidos e sempre atentos às tendências do mercado digital para aconselhar o cliente da melhor forma, assim os sites que foram produzidos para minha empresa tomaram forma e estão no ar com a identidade de nossos produtos e serviços. Participaram de reuniões presenciais e online para a elaboração dos projetos e melhor entendimento sobre a marca, conseguiram assim capturar a essência do que gostaríamos que nossos clientes vissem em nossas páginas na internet.
+					<?php echo the_field('depoimento_01'); ?>
 				</p>
 			</div>
 
@@ -116,15 +99,19 @@ Qualquer problema é só entrar em contato.</p>
 		<div class="item">
 
 			<div class="left">
-				<img src="https://picsum.photos/199/300" alt="aline">
+				<?php if( get_field('foto_depoimento_02') ): ?>
+
+					<img src="<?php the_field('foto_depoimento_02'); ?>" />
+
+				<?php endif; ?>
 			</div>
 
 			<div class="right">
-				<h3>Romon Gorge</h3>
-				<a href="#">WWW.BACONSIDE.COM.BR</a>
+				<h3><?php echo  the_field('titulo_depoimento_02'); ?></h3>
+				<a href="<?php the_field('link_depoimento_02'); ?>" target="_blank"><?php echo the_field('site_depoimento_02'); ?></a>
 
 				<p>
-					Excelentes profissionais, pontuais para entrega dos trabalhos pedidos e sempre atentos às tendências do mercado digital para aconselhar o cliente da melhor forma, assim os sites que foram produzidos para minha empresa tomaram forma e estão no ar com a identidade de nossos produtos e serviços. Participaram de reuniões presenciais e online para a elaboração dos projetos e melhor entendimento sobre a marca, conseguiram assim capturar a essência do que gostaríamos que nossos clientes vissem em nossas páginas na internet.
+					<?php echo the_field('depoimento_02'); ?>
 				</p>
 			</div>
 
@@ -133,15 +120,19 @@ Qualquer problema é só entrar em contato.</p>
 		<div class="item">
 
 			<div class="left">
-				<img src="https://picsum.photos/199/300" alt="aline">
+				<?php if( get_field('foto_depoimento_03') ): ?>
+
+					<img src="<?php the_field('foto_depoimento_03'); ?>" />
+
+				<?php endif; ?>
 			</div>
 
 			<div class="right">
-				<h3>Guilherme Souza</h3>
-				<a href="#">WWW.LUZRETRO.COM.BR</a>
+				<h3><?php echo  the_field('titulo_depoimento_03'); ?></h3>
+				<a href="<?php the_field('link_depoimento_03'); ?>" target="_blank"><?php echo the_field('site_depoimento_03'); ?></a>
 
 				<p>
-					Excelentes profissionais, pontuais para entrega dos trabalhos pedidos e sempre atentos às tendências do mercado digital para aconselhar o cliente da melhor forma, assim os sites que foram produzidos para minha empresa tomaram forma e estão no ar com a identidade de nossos produtos e serviços. Participaram de reuniões presenciais e online para a elaboração dos projetos e melhor entendimento sobre a marca, conseguiram assim capturar a essência do que gostaríamos que nossos clientes vissem em nossas páginas na internet.
+					<?php echo the_field('depoimento_03'); ?>
 				</p>
 			</div>
 

@@ -3,11 +3,11 @@
 		<?php get_header();?>
 
 		<div class="callHome">
-			<h1>Seus produtos são ótimos.</h1>
-			<h1>A forma com que são apresentados não.</h1>
-			<h1>Nós podemos ajudar!</h1>
+			<h1>
+				<?php echo get_theme_mod('banner_heading'); ?>
+			</h1>
 
-			<a href="#" class="main-btn">
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Contato' ) ) ); ?>" class="main-btn">
 				Contato
 			</a>
 		</div>

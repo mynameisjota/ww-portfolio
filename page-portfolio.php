@@ -18,7 +18,7 @@ if ( $loop->have_posts() ) {
         <article class="main-project">
             <div class="left">
                 <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-                <span>Desenvolvimento Web</span>
+                <span><?php the_cateogory(); ?></span>
             </div>
 
             <div class="right">
