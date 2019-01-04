@@ -11,11 +11,11 @@
 			<h3>Dados</h3>
 				<span>11 953524954</span>
 				<span>hello@wwcomunicacao.com.br</span>
-				<h3 class="sociais-contato">Redes Sociais</h3>
+				<h3 class="sociais-contato">Somos Sociaveis</h3>
 				<ul>
-					<li><img src = '<?php bloginfo('template_directory'); ?>/images/icones/facebook.svg' alt = 'Design UX/UI' /></li>
-					<li><img src = '<?php bloginfo('template_directory'); ?>/images/icones/instagram.svg' alt = 'Design UX/UI' /></li>
-					<li><img src = '<?php bloginfo('template_directory'); ?>/images/icones/behance.svg' alt = 'Design UX/UI' /></li>
+					<a href="https://www.facebook.com/agenciawolfsway" target="_blank"><li><img src = '<?php bloginfo('template_directory'); ?>/images/icones/facebook.svg' alt = 'Design UX/UI' /></li></a>
+					<li><a href="https://www.instagram.com/hello.wolfsway" target="_blank"><li><img src = '<?php bloginfo('template_directory'); ?>/images/icones/instagram.svg' alt = 'Design UX/UI' /></li></a>
+					<li><a href="https://www.behance.net/wolfsway" target="_blank"><li><img src = '<?php bloginfo('template_directory'); ?>/images/icones/behance.svg' alt = 'Design UX/UI' /></li></a>
 				</ul>
 		</div>
 

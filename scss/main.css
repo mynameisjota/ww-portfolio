@@ -520,6 +520,9 @@ h1.title-blog {
       padding-bottom: 15px; }
     .contato .left span, .contato .left p {
       color: #808080; }
+    .contato .left li {
+      display: inline-block;
+      margin-right: 15px; }
   .contato .right {
     flex: 1 1 500px; }
 
