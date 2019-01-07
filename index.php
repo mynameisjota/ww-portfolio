@@ -2,7 +2,7 @@
 <?php get_header('dois') ?>
 
 <div class="main-blog">
-<h1 class="title-blog">Nossas<br> Postagens</h1>
+<h1 class="main-title-entry" style="width: 100%;">Nossas<br> Postagens</h1>
 <div class="left">
 
 <?php

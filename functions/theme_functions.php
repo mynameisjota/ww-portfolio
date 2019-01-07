@@ -43,3 +43,23 @@ add_action('after_setup_theme', 'setup_theme');
 function responsive_embed($html, $url, $attr) {
     return $html!=='' ? '<div class="embed-container">'.$html.'</div>' : '';
 }
+
+// Sidebar
+
+add_action('after_setup_theme', 'admiraljota_setup');
+
+
+
+function admiraljota_widgets_init() {
+  register_sidebar( array(
+    'name'          => esc_html__( 'Sidebar', 'admiraljota' ),
+    'id'            => 'sidebar-1',
+    'description'   => esc_html__( 'Adicione seu widget aqui', 'admiraljota' ),
+    'before_widget' => '<div class="main-w">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ) );
+}
+
+add_action( 'widgets_init', 'admiraljota_widgets_init' );

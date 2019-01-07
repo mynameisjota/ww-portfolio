@@ -14,7 +14,7 @@
 			<?php endwhile; ?> 
 		</main>
 		<aside class="sidebar-single">
-			sidebar
+			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 		</aside>
 	</section>
 	<?php get_footer('dois'); ?>

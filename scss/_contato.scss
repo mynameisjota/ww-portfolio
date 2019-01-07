@@ -1,6 +1,7 @@
 .contato{
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 
 	/*Orçamento*/
 	form, input, textarea{
@@ -55,11 +56,32 @@
 	.left{
 		flex: 1 1 500px; 
 
+		address{
+			a{
+				color: $black;
+				font-weight: bold;
+			}
+		}
+
+		.intro{
+			max-width: 90%;
+			font-size: 16px;
+		}
+
+		.intro, .intro2{
+			margin-bottom: 30px;
+			line-height: 1.5rem;
+		}
+
 		h3{
 			font-size: 1.25rem;
 			color: $black;
 			margin-bottom: 2rem;
 		} 
+
+		ul{
+			margin-bottom: 100px;
+		}
 
 		h3.sociais-contato{
 			margin: 2rem 0;

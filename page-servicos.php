@@ -8,20 +8,22 @@
 	<section class="servicos">
 		
 		<div class="item">
-				<header>
-					<h2><?php echo the_field('servico_01'); ?></h2>
-					<p><?php echo the_field('servico_01_descricao'); ?></p>
-				</header>
+
+			<header>
+				<h2><?php echo the_field('servico_01'); ?></h2>
+				<p><?php echo the_field('servico_01_descricao'); ?></p>
+			</header>
+
 			<div class="left">
+				<img src = '<?php bloginfo('template_directory'); ?>/images/icones/design.svg' alt = 'Design UX/UI' />
+			</div> <!-- LEFT -->
+
+			<div class="right">
 				<?php echo the_field('servico_01_lista'); ?>
 
 				<p>
 					<?php echo the_field('conteudo_do_servico_01'); ?>
 				</p>
-			</div> <!-- LEFT -->
-
-			<div class="right">
-				<img src = '<?php bloginfo('template_directory'); ?>/images/des2.svg' alt = 'Design UX/UI' />
 			</div>
 		</div>
 
@@ -31,15 +33,15 @@
 					<p><?php echo the_field('servico_02_descricao'); ?></p>
 				</header>
 			<div class="left">
+				<img src = '<?php bloginfo('template_directory'); ?>/images/icones/codigo.svg' alt = 'Design UX/UI' />
+			</div> <!-- LEFT -->
+
+			<div class="right">
 				<?php echo the_field('servico_02_lista'); ?>
 
 				<p>
 					<?php echo the_field('conteudo_do_servico_02'); ?>
 				</p>
-			</div> <!-- LEFT -->
-
-			<div class="right">
-				<img src = '<?php bloginfo('template_directory'); ?>/images/dev.svg' alt = 'Design UX/UI' />
 			</div>
 		</div>
 
@@ -49,15 +51,16 @@
 					<p><?php echo the_field('servico_03_descricao'); ?></p>
 				</header>
 			<div class="left">
+
+				<img src = '<?php bloginfo('template_directory'); ?>/images/icones/suporte.svg' alt = 'Design UX/UI' />
+			</div> <!-- LEFT -->
+
+			<div class="right">
 				<?php echo the_field('servico_03_lista'); ?>
 
 				<p>
 					<?php echo the_field('conteudo_do_servico_03'); ?>
 				</p>
-			</div> <!-- LEFT -->
-
-			<div class="right">
-				<img src = '<?php bloginfo('template_directory'); ?>/images/sup.svg' alt = 'Design UX/UI' />
 			</div>
 		</div>
 
