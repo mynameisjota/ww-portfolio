@@ -9,7 +9,6 @@
 			 </main>
 		<?php } ?>
 		<!-- //// Footer -->
-
-		<?php get_footer('dois'); ?>
 	</div>
 </div>
+<?php get_footer('dois'); ?>

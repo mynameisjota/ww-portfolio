@@ -12,10 +12,12 @@
     <style>
 		.main-content {
 		  width: 100%;
-		  min-height: 100vh;
+		  max-height: 680px;
 		  background: url(<?php echo get_theme_mod('banner_image'); ?>) no-repeat 50% 50%;
-		  background-size: cover;
-		  overflow: hidden; }
+		  background-attachment: fixed;
+		  background-size: cover; 
+		  position: relative;
+		}
     </style>
 </head>
 <?php wp_head(); ?>

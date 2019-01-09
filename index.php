@@ -64,9 +64,9 @@
 </div> <!-- right -->
 
 </div>
+</main>
 
 <?php get_footer('dois') ?>
-</main>
 
 
     

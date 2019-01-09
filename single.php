@@ -17,5 +17,5 @@
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 		</aside>
 	</section>
-	<?php get_footer('dois'); ?>
 </div>
+<?php get_footer('dois'); ?>

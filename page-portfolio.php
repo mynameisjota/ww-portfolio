@@ -15,16 +15,28 @@ $loop = new WP_Query( $args );
 if ( $loop->have_posts() ) {
     while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-        <article class="main-project">
-            <div class="left">
-                <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-                <span><?php the_cateogory(); ?></span>
-            </div>
+    <div class="portfolio-list-home">
+        <?php
+        $PortfolioItems = new WP_Query(array(
+            'paged' => get_query_var('paged', 1),
+            'post_type' => 'portfolio',
+            'posts_per_page' => 2
+        ));
 
-            <div class="right">
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('portfolio-image'); ?></a>
-            </div>a
-        </article>     
+        while($PortfolioItems->have_posts()) {
+            $PortfolioItems->the_post(); ?>
+
+            <div class="item">
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail('port-home'); ?>
+                </a>
+                <a href="<?php the_permalink(); ?>">
+                    <h2><?php the_title(); ?></h2>
+                </a>
+            </div>  
+        <?php wp_reset_postdata(); ?>
+        <?php } ?>
+    </div>   
 
     <?php endwhile; ?>
 
@@ -47,9 +59,10 @@ if ( $loop->have_posts() ) {
 
 <?php wp_reset_postdata(); ?>
     
-        <?php get_footer(); ?>
+
     </div>
 </div>
+<?php get_footer(); ?>
 
 
 

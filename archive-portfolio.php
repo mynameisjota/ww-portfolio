@@ -1,38 +1,35 @@
 <div class="container">
 	<?php get_header('dois') ?>
 
+	<h1 class="main-title-entry services-title">Nossos<br>
+		Trabalhos
+	</h1>
+
 	<div class="portfolio-page">
 
 
-			<?php
-			$PortfolioItems = new WP_Query(array(
-				'paged' => get_query_var('paged', 1),
-				'post_type' => 'portfolio',
-			));
+	<div class="portfolio-list-home">
+		<?php
+		$PortfolioItems = new WP_Query(array(
+			'paged' => get_query_var('paged', 1),
+			'post_type' => 'portfolio',
+			'posts_per_page' => 8
+		));
 
-			while($PortfolioItems->have_posts()) {
-				$PortfolioItems->the_post(); ?>
+		while($PortfolioItems->have_posts()) {
+			$PortfolioItems->the_post(); ?>
 
-
-		        <article class="main-project">
-		            <div class="left">
-		                <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-		                <span>
-		                	<?php
-								foreach((get_the_category()) as $category) { 
-								    echo $category->cat_name . ' '; 
-								} 
-							?>
-		                </span>
-		            </div>
-
-		            <div class="right">
-		                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('portfolio-image'); ?></a>
-		            </div>
-		        </article> 
-
-
-			<?php } ?>
+			<div class="item">
+				<a href="<?php the_permalink(); ?>">
+					<?php the_post_thumbnail('port-home'); ?>
+				</a>
+				<a href="<?php the_permalink(); ?>">
+					<h2><?php the_title(); ?></h2>
+				</a>
+			</div>	
+		<?php wp_reset_postdata(); ?>
+		<?php } ?>
+	</div>
 
 
 		<div class="row pagination">
@@ -46,8 +43,8 @@
 		</div>
 
 	</div>
-	<?php get_footer('dois'); ?>
 </div>
+<?php get_footer('dois'); ?>
 
 <?php wp_reset_postdata(); ?>
 	

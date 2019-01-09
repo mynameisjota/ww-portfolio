@@ -61,7 +61,19 @@
 
 .call-to-action{
 
-	margin: 150px 0;
+	.contato{
+	background: $roxo;
+	color: $white;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 50px;
+	display: inline-block;
+	}
+
+	margin: 100px 0 0 0;
 
 	h1{
 		font-size: 1.875rem;
@@ -69,13 +81,6 @@
 		margin-bottom: 30px;
 	}
 	
-	a{
-		background: $black;
-		color: $white;
-		padding: 10px 20px;
-		margin-bottom: 100px;
-		display: table;
-	}
 }
 
 .servicos .left a:last-child{
@@ -117,6 +122,10 @@
 			}
 		}
 	}
+}
+
+.services-title{
+	margin-top: 100px;
 }
 
 .slide{

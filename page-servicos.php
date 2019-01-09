@@ -142,11 +142,8 @@
 		</div>
 	</section>
 
-
-	
-
-<?php get_footer('dois') ?>
 </main>
+<?php get_footer('dois') ?>
 
 
     

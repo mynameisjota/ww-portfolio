@@ -35,7 +35,7 @@
 				<input id="nome" name="nome" type="text">
 				<label for="email">E-mail</label>
 				<input id="email" name="email" type="text">
-				<label for="mensagem">Telefone</label>
+				<label for="mensagem">Mensagem</label>
 
 				<textarea name="mensagem" id="mensagem"></textarea>
 
@@ -49,9 +49,9 @@
 		</div>
 
 	</section> <!-- Servicos -->	
+</main>
 
 <?php get_footer('dois') ?>
-</main>
 
 
     

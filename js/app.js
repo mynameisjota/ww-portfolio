@@ -3,8 +3,6 @@ $('.nav-toggle').click(function(){
 	$('.mobile-menu').toggleClass('active');
 })
 
-// Slide
-
 // Slider
 function slider(sliderName, velocidade) {
 	var sliderClass = '.' + sliderName,

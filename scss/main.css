@@ -204,19 +204,26 @@ a.page-numbers {
   margin: auto auto 40px auto; }
 
 .callHome {
-  margin-top: 15vh;
+  margin-top: 10vh;
   flex: 1 0 auto; }
   .callHome h1 {
     font-size: 2.5rem;
     color: #ffffff; }
 
 .main-btn {
-  background: #ffffff;
-  color: #383838;
-  padding: 10px 30px;
+  background: #7b93f8;
+  color: #ffffff;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 50px;
   margin-top: 3.125rem;
   display: inline-block;
-  max-width: 100%; }
+  max-width: 100%;
+  position: absolute;
+  bottom: -25px; }
 
 @media only screen and (max-width: 1200px) {
   .callHome h1 {
@@ -254,13 +261,15 @@ a.page-numbers {
       opacity: 1; }
 
 .main-footer.footer-dois {
-  margin: 100px 0 50px 0; }
+  background: #E6E6E6;
+  padding: 40px 0;
+  margin: 100px 0 0 0; }
   .main-footer.footer-dois a {
     color: #383838; }
 
 @media only screen and (max-width: 900px) {
   .main-footer.footer-dois {
-    margin: 100px 0 50px 0; }
+    margin: 100px 0 0 0; }
     .main-footer.footer-dois a {
       font-size: 12px; }
 
@@ -320,6 +329,37 @@ ESTILOS PARA A SINGLE DO PROJETO
   .portfolio-single h1 {
     font-size: 2rem;
     margin-bottom: 50px; } }
+.portfolio-list-home {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-bottom: 50px; }
+  .portfolio-list-home .item {
+    flex: 1 1 400px;
+    margin-right: 20px; }
+    .portfolio-list-home .item img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px; }
+    .portfolio-list-home .item h2 {
+      font-weight: bold;
+      font-size: 26px;
+      color: #383838;
+      margin-bottom: 40px; }
+
+.mais-trabalhos a {
+  background: #7b93f8;
+  color: #ffffff;
+  padding: 0 30px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 50px;
+  display: inline-block;
+  margin-bottom: 100px; }
+
 .main-blog {
   display: flex;
   flex-direction: row;
@@ -446,17 +486,21 @@ h1.title-blog {
         margin: 0 0 50px 0; }
 
 .call-to-action {
-  margin: 150px 0; }
+  margin: 100px 0 0 0; }
+  .call-to-action .contato {
+    background: #7b93f8;
+    color: #ffffff;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 50px;
+    display: inline-block; }
   .call-to-action h1 {
     font-size: 1.875rem;
     color: #383838;
     margin-bottom: 30px; }
-  .call-to-action a {
-    background: #383838;
-    color: #ffffff;
-    padding: 10px 20px;
-    margin-bottom: 100px;
-    display: table; }
 
 .servicos .left a:last-child {
   margin-bottom: 0; }
@@ -482,6 +526,9 @@ h1.title-blog {
     .depoimentos .item .right p {
       font-size: 18px;
       color: #383838; }
+
+.services-title {
+  margin-top: 100px; }
 
 .slide {
   position: relative;
