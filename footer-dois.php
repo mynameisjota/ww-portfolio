@@ -1,3 +1,7 @@
+<script>
+new WOW().init();
+</script>
+
 <footer class="main-footer footer-dois">
 	<div class="container main-footer">
 		<ul class="sociais">

@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <title><?php bloginfo('name'); ?>	</title>
 </head>
 <?php wp_head(); ?>
 <body>
+
+<script type="text/javascript">
+	document.documentElement.className += ' js';
+</script>
 
 <header class="main-header main-header-dois">
 	<div class="main-logo"><?php the_custom_logo(); ?>

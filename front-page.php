@@ -1,19 +1,19 @@
-<main class="main-content">
+<div class="main-content">
 	<div class="container">
 		<?php get_header();?>
 
 		<div class="callHome">
-			<h1>
+			<h1 class="animated fadeInLeft">
 				<?php echo get_theme_mod('banner_heading'); ?>
 			</h1>
 
-			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Contato' ) ) ); ?>" class="main-btn">
+			<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Contato' ) ) ); ?>" class="main-btn animated fadeInLeft">
 				Contato
 			</a>
 		</div>
 
 	</div>
-</main>
+</div>
 
 <main class="container">	
 	<h1 class="main-title-entry services-title">O que <br>
@@ -21,8 +21,15 @@
 	</h1>
 
 	<section class="servicos">
+
+		<ul class="lista-servicos">
+			<li><a href="#ui">UI/UX Design</a></li>
+			<li><a href="#dev">Desenvolvimento</a></li>
+			<li><a href="#mark">Marketing Digital</a></li>
+			<li><a href="#sup">Suporte</a></li>
+		</ul>
 		
-		<div class="item">
+		<div class="item uow fadeInLeft" id="ui">
 
 			<header>
 				<h2><?php echo the_field('servico_01'); ?></h2>
@@ -42,7 +49,7 @@
 			</div>
 		</div>
 
-		<div class="item">
+		<div class="item" id="dev">
 				<header>
 					<h2><?php echo the_field('servico_02'); ?></h2>
 					<p><?php echo the_field('servico_02_descricao'); ?></p>
@@ -60,7 +67,26 @@
 			</div>
 		</div>
 
-		<div class="item">
+		<div class="item" id="mark">
+				<header>
+					<h2><?php echo the_field('servico_03'); ?></h2>
+					<p><?php echo the_field('servico_03_descricao'); ?></p>
+				</header>
+			<div class="left">
+
+				<img src = '<?php bloginfo('template_directory'); ?>/images/icones/suporte.svg' alt = 'Design UX/UI' />
+			</div> <!-- LEFT -->
+
+			<div class="right">
+				<?php echo the_field('servico_03_lista'); ?>
+
+				<p>
+					<?php echo the_field('conteudo_do_servico_03'); ?>
+				</p>
+			</div>
+		</div>
+
+		<div class="item" id="sup">
 				<header>
 					<h2><?php echo the_field('servico_03'); ?></h2>
 					<p><?php echo the_field('servico_03_descricao'); ?></p>

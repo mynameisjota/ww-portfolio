@@ -5,9 +5,9 @@
 function ww_theme_setup(){
 	add_theme_support('title-tag');
 	add_theme_support('post-thumbnails');
-	add_image_size('portfolio-image', 1020, 400, true);
-  add_image_size( 'blog-list', 740, 350, array( 'bottom') );
-	add_image_size('blog-post', 1200, 630, true);
+	add_image_size('portfolio-image', 800, 800, true);
+  add_image_size( 'blog-list', 800, 650, array( 'bottom') );
+	add_image_size('blog-post', 800, 600, true);
   add_image_size('port-home', 800, 400, true);
 	add_theme_support( 'custom-logo' );
 }

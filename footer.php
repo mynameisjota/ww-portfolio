@@ -1,3 +1,7 @@
+<script>
+	new UOW().init();
+</script>
+
 <footer class="main-footer">
 	<div class="container">
 		<ul class="sociais">

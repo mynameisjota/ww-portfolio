@@ -4,12 +4,24 @@ body,html,h1,h2,h3,h4,h5,h6{
 	font-family: 'Montserrat', sans-serif;
 }
 
+body,html{
+    min-height: 100vh;
+    position: relative;
+}
+
+//Cores
+$black: #505050;
+$white: #ffffff;
+$roxo:  #7b93f8;
+$green:  #4BFFA5;
+
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Montserrat', sans-serif;
 }
 
 a{
 	text-decoration: none;
+    color: $green;
 }
 
 ul{
@@ -29,11 +41,6 @@ ul{
 img.custom-logo {
     display: none;
 }
-
-//Cores
-$black: #383838;
-$white: #ffffff;
-$roxo:  #7b93f8;
 
 .main-title-entry{
 	font-size: 3.125rem;
@@ -57,15 +64,15 @@ span.page-numbers.current {
 }
 .page-numbers.current,
 a.page-numbers:hover {
-	background: #1F1F1F;
+	background: $green;
 }
 
 a.page-numbers{
 	display: inline-block;
 	padding: 10px 15px;
 	margin: 0 2px 0 0;
-	background: $black;
-	color: $white;
+	background: $green;
+	color: $black;
 	line-height: 1;
 	text-decoration: none;
 	font-weight: 600;
@@ -74,8 +81,8 @@ a.page-numbers{
 // Texto selecionado
 
 ::selection {
-    background: $black;
-    color: $white;
+    background: $green;
+    color: $black;
 }
 
 // Responsive Embed

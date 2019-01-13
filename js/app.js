@@ -1,3 +1,5 @@
+
+
 $('.nav-toggle').click(function(){
 	$(this).toggleClass('active');
 	$('.mobile-menu').toggleClass('active');
@@ -30,3 +32,20 @@ function slider(sliderName, velocidade) {
 }
 
 slider('depoimentos', 6000);
+
+// Servicos
+
+var classActive = 'active';
+
+$('.lista-servicos a').first().addClass(classActive);
+$('.item').first().addClass(classActive);
+
+$('.lista-servicos a').click (function(e){
+	e.preventDefault();
+	var itemId = $(this).attr('href');
+
+	$('.lista-servicos a, .item').removeClass(classActive);
+	$(this).addClass(classActive);
+	$(itemId).addClass(classActive);
+});
+
